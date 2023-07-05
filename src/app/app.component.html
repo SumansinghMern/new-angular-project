@@ -1,7 +1,7 @@
-<npst-header></npst-header>
+<npst-header (target)="onChangeHeader($event)"></npst-header>
 <div class="container">
   <div class="row">
-      <npst-recipes></npst-recipes>
-      <npst-shopping-list></npst-shopping-list>
+    <npst-recipes *ngIf="!shoping"></npst-recipes>
+    <npst-shopping-list *ngIf="shoping"></npst-shopping-list>
   </div>
 </div>
