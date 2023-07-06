@@ -6,26 +6,6 @@
 <hr>
 <div class="row">
     <div class="col-xs-12">
-            <a 
-                href="#" 
-                class="list-group-item clearfix"
-                *ngFor="let recipe of recipes">
-                <div class="pull-left">
-                    <div class="list-group-item-heading">
-                        {{recipe.name}}
-                    </div>
-                    <div class="list-group-item-text">
-                        {{recipe.discription}}
-                    </div>
-                </div>
-                <div class="pull-right">
-                    <img 
-                        [src]="recipe.image" 
-                        alt="{{recipe.name}}" 
-                        class="img-responsive" 
-                        style="max-height: 50px;">
-                </div>
-            </a>
+            <npst-recipe-item (getRecipeEvent)="onSelectRecipe($event)" *ngFor="let rec of recipes" [recipe]="rec"></npst-recipe-item>
     </div>
 </div>
-<npst-recipe-item></npst-recipe-item>

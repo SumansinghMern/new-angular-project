@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './recipe.model';
 
 @Component({
   selector: 'npst-recipes',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class RecipesComponent {
 
+  selectedRecipeDetails: Recipe
+
+  getRecipeDetails(recipeDetails: any){
+    console.log("🚀 ~ file: recipes.component.ts:14 ~ RecipesComponent ~ getRecipeDetails ~ recipeDetails:", recipeDetails)
+    this.selectedRecipeDetails = recipeDetails
+  }
 }

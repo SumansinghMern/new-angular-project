@@ -1,9 +1,15 @@
 <p>recipes works!</p>
 <div class="row">
     <div class="col-md-5">
-        <npst-recipe-list></npst-recipe-list>
+        <npst-recipe-list (selectedRecipeEvent)="getRecipeDetails($event)"></npst-recipe-list>
     </div>
     <div class="col-md-7">
-        <npst-recipe-details></npst-recipe-details>
+        <npst-recipe-details 
+            [recipeItem]="selectedRecipeDetails"
+            *ngIf="selectedRecipeDetails; else noItem">
+        </npst-recipe-details>
+        <ng-template #noItem>
+            <p>Please select a Item</p>
+        </ng-template>
     </div>
 </div>
