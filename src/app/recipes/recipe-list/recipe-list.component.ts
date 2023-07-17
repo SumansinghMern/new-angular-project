@@ -8,7 +8,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecopeListComponent {
  recipes: Recipe[] = [
-  new Recipe('Omlet', 'Best 2 Minute ready Food', 'http://sherebengal.com/wp-content/uploads/2017/09/Omlet-1pc.jpg'),
+  new Recipe('Omlet', 'Best 2 Minute ready Food', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPaT86JHrkGfy_GFyDgBBMbxaM9XJHA3BbvHoyybMR7ZQR_xXezqOe6Fyi43nTmm0_kk&usqp=CAU'),
   new Recipe('Maggey', 'Not Eat Regular ', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=300,272')
  ];
 
